@@ -44,8 +44,8 @@ BEGIN
   $max_recipients    = 5;
   $mailprog          = '/usr/lib/sendmail -oi -t';
   $postmaster        = '';
-  @referers          = qw(dave.org.uk 209.207.222.64 localhost);
-  @allow_mail_to     = qw(you@your.domain some.one.else@your.domain localhost);
+  @referers          = qw(torijesser.github.io/plex/ https://torijesser.github.io/plex/);
+  @allow_mail_to     = qw(djesserj93@gmail.com);
   @recipients        = ();
   %recipient_alias   = ();
   @valid_ENV         = qw(REMOTE_HOST REMOTE_ADDR REMOTE_USER HTTP_USER_AGENT);
