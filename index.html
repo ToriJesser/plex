@@ -13,8 +13,6 @@
 
 <!-- Body -->
     <body>
-    
-        <h1 class="main_title"></h1>
 
     <!-- Video --> 
         <video autoplay muted loop id="video">
@@ -31,23 +29,39 @@
     </div>
 
     <div class="center">
-    <!-- Form -->
+    <!-- Title Request Form -->
         <form action="https://formspree.io/mlelperq" method="POST" class="form-container">
             <input type="hidden" name="_next" value="https://torijesser.github.io/plex/"/>
             <label for="Name"><b>Your Name:</b></label>
-                <input type="text" placeholder="Please enter your name here" name="name" required>
+                <input type="text" placeholder="Please enter your name here" name="Name" required>
             <label for="Movie Title"><b>Movie Title:</b></label>
-                <input type="text" name="title" placeholder="Please enter title of movie here" name="title" required>
+                <input type="text" name="Movie Title" placeholder="Please enter title of movie here" name="title" required>
             <label for="Release Date"><b>Release Date:</b></label>
-                <input type="text" name="release" placeholder="Optional release date here">
+                <input type="text" name="Release Date" placeholder="Optional release date here">
             <label for="IMBD Link"><b>IMBD Link:</b></label>
-                <input type="text" name="link" placeholder="Required IMBD link" required>
+                <input type="text" name="IMBD Link" placeholder="Required IMBD link" required>
                 
         <button type="submit" class="btn" value="Send">SUBMIT</button>
             
     
         </form>
     </div>
+
+    <!-- Fix Request Form -->
+    <div>
+    <button onclick="openForm()" class="Pop_Up_Button"> FIX REQUESTS </button>
+    <div class="form-popup" id="myForm">
+        <form action="" method="POST" class="fix-form-container">
+            <input type="hidden" name="_next" value="https://torijesser.github.io/plex/"/>
+            <label for="Name"><b>Your Name:</b></label>
+                <input type="text" placeholder="Please enter your name here" name="Name" required>
+            <label for="Movie Title"><b>Description</b></label>
+                <input type="text" name="Issue" placeholder="Please enter a brief description of your issue" name="title" required>
+                
+        <button type="submit" class="btn" value="Send">SUBMIT</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+    </div>
+
     </body>
 
 </html>
