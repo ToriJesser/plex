@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+    <head>
+
+        <meta charset="utf-8">
+        <title>Plex Requests</title>
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <script src="js/index.js"></script>
+
+    </head>
+
+<!-- Body -->
+    <body>
+    
+        <h1 class="main_title"></h1>
+
+    <!-- Video --> 
+        <video autoplay muted loop id="video">
+            <source src="./videos/Plexus - 27669.mp4" type="video/mp4">
+            Your browser does not support HTML5 video. <!-- alt video playback fail -->
+        </video>
+    </div>
+
+    <!-- Video Text -->
+    <div class="video_text">
+    <center>
+        <h1 style="color:goldenrod;">Welcome To Plex Requests!</h1>
+    </center>
+    </div>
+
+    <div class="center">
+    <!-- Form -->
+        <form action="mailto:djesserj93@gmail.com" method="POST" class="form-container">
+            <label for="name"><b>Your Name:</b></label>
+                <input type="text" placeholder="Please enter your name here" name="name" required>
+            <label for="title"><b>Movie Title:</b></label>
+                <input type="text" placeholder="Please enter title of movie here" name="title" required>
+            <label for="release"><b>Release Date:</b></label>
+                <input type="text" name="release" placeholder="Optional release date here">
+            <label for="link"><b>IMBD Link:</b></label>
+                <input type="text" name="link" placeholder="Required IMBD link" required>
+
+        <button type="submit" class="btn" value="Send Email">SUBMIT</button>
+            
+    
+        </form>
+    </div>
+    </body>
+
+</html>

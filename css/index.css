@@ -1,0 +1,104 @@
+/* Affects entire site */
+
+html {
+    scroll-behavior: smooth; /* This ensures that the page scrolling is smooth when the nav bar is clicked */
+  }
+
+  body {
+    margin: 0%;
+    opacity: 1;
+    transition: 3s opacity;
+    letter-spacing: .2vw;
+    font-family: Optima, sans-serif;
+    font-size: 1.5vw;
+}
+
+  /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
+  @keyframes movevideoText {
+    from {top: -100vw;}
+    to {top: 0px;}
+  }
+
+  /* Video */
+#video {
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+/* Text over the video */
+.video_text {
+    color: goldenrod;
+    width: 100%;
+    padding-top: .1vh;
+    padding-bottom: 1vh;
+    position:relative;
+}
+
+/* Contact Form Styling */
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Marker Felt;
+}
+
+.form-container {
+    max-width: 49vw;
+    padding: 9px;
+    background-color: goldenrod;
+
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding-top: 50px;
+  }
+
+/* Submit button */
+.form-container .btn {
+    background-color: white;
+    color: black;
+    border-color: black;
+    margin-bottom: 1vh;
+}
+
+
+/* Button styling */
+button {
+    font-family: "Trebuchet MS", Optima; 
+    letter-spacing: .3vw; 
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1.5vw 1.5vw;
+    border-style: solid;
+    cursor: pointer;
+    width: 100%;
+    height: auto;  
+}
+
+/* Hover effect for buttons */
+button:hover, .form-container .btn:hover{
+    color: white;
+    background-color: black;
+    -webkit-transition-duration: 1s; 
+    transition-duration: 1s;
+    border-style: solid;
+    border-color: silver;
+  }
+.form-container .cancel:hover{
+    color: white;
+    background-color: darkred;
+    -webkit-transition-duration: 1s; 
+    transition-duration: 1s;
+    border-style: solid;
+    border-color: black;
+}	
