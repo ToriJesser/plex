@@ -160,3 +160,29 @@ button:hover, .form-container .btn:hover{
   border-style: solid;
   border-color: silver;
 }
+
+
+/* navbar styling */
+.navbar {
+  overflow: hidden;
+  background-color:goldenrod;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+}
+
+.navbar a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-family: Optima, sans-serif;
+  font-size: 2vw;
+  text-align: left;
+  position: relative;
+}
+
+/* removes white bar */
+.header h1 {
+  margin-top:0;
+}

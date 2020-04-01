@@ -8,11 +8,17 @@
         <title>Plex Requests</title>
         <link rel="stylesheet" type="text/css" href="./css/index.css">
         <script src="js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
     </head>
 
 <!-- Body -->
     <body>
+
+    <!-- Navbar -->
+    <div class= "navbar">
+        <a class="active" href="https://www.imdb.com/?ref_=nv_home" target="_blank" style="color:black">IMDB</a>
+    </div>
 
     <!-- Video --> 
         <video autoplay muted loop id="video">
@@ -38,8 +44,8 @@
                 <input type="text" name="Movie Title" placeholder="Please enter title of movie here" required>
             <label for="Release Date"><b>Release Date:</b></label>
                 <input type="text" name="Release Date" placeholder="Optional release date here">
-            <label for="IMBD Link"><b>IMBD Link:</b></label>
-                <input type="text" name="IMBD Link" placeholder="Required IMBD link" required>
+            <label for="IMBD Link"><b>IMDB Link:</b></label>
+                <input type="text" name="IMDB Link" placeholder="Required IMBD link" required>
                 
         <button type="submit" class="btn" value="Send">SUBMIT</button>
             
