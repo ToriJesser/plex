@@ -183,6 +183,6 @@ button:hover, .form-container .btn:hover{
 }
 
 /* removes white bar */
-.header h1 {
+h1 {
   margin-top:0;
 }
