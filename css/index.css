@@ -20,6 +20,7 @@ html {
     bottom: 0;
     min-width: 100%;
     z-index: -1;
+    margin: 0;
 }
 
 /* Text over the video */
