@@ -25,17 +25,10 @@ html, body {
 
   /* Video */
 #video {
-  position: absolute;
-  top: 50%; 
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 100%; 
-  min-height: 100%; 
-  width: auto; 
-  height: auto;
-  z-index: -1000; 
-  overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
 }
 
 /* Text over the video */
